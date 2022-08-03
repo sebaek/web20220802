@@ -7,6 +7,20 @@
             font-size: 2em;
             background-color: yellow;
         }
+
+        .korea {
+            font-weight: bold;
+            font-size: 3em;
+            color: red;
+            background-color: blue;
+        }
+
+        /* 마지막 p요소 2개에 아래 규칙이 적용되도록
+        클래스 속성을 추가*/
+        .error {
+            text-decoration: line-through;
+            font-size: 20px;
+        }
     </style>
 </head>
 <body>
@@ -15,15 +29,15 @@
     <p>여러 요소를 그룹 짓는 attribute</p>
 
     <!-- p*10>lorem3 -->
-    <p>Lorem, ipsum dolor.</p>
+    <p class="korea">Lorem, ipsum dolor.</p>
     <p class="special">Autem, minima ipsum?</p>
     <p class="special">Placeat, in veniam!</p>
-    <p>Sed, consequuntur omnis.</p>
+    <p class="korea">Sed, consequuntur omnis.</p>
     <p class="special">Odio, qui incidunt.</p>
-    <p>Nulla, tempora exercitationem!</p>
-    <p>Cum, fugiat consequatur.</p>
+    <p class="korea">Nulla, tempora exercitationem!</p>
+    <p class="error">Cum, fugiat consequatur.</p>
     <p>Blanditiis, molestias dolore!</p>
-    <p>Omnis, adipisci repellendus!</p>
-    <p>Quam, iste sit?</p>
+    <p class="error">Omnis, adipisci repellendus!</p>
+    <p class="error">Quam, iste sit?</p>
 </body>
 </html>
