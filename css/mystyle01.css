@@ -1,0 +1,9 @@
+.my-table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+.my-table td {
+    border: 1px solid black;
+    padding: 5px;
+}
