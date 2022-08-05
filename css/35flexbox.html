@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .item {
+            font-size: 48px;
+        }
+        .item:nth-child(odd) {
+            background-color: gold;
+        }
+        .item:nth-child(even) {
+            background-color: aqua;
+        }
+        .container {
+            background-color: chocolate;
+            display: flex;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- .container>.item#item$*5{$} -->
+    <div class="container">
+        <div class="item" id="item1">1</div>
+        <div class="item" id="item2">2</div>
+        <div class="item" id="item3">3</div>
+        <div class="item" id="item4">4</div>
+        <div class="item" id="item5">5</div>
+    </div>
+
+    <hr>
+
+    <!-- div>div*4 -->
+    <style>
+        .parent {
+            display: flex;
+        }
+        .parent > div {
+            font-size: 48px;
+            font-weight: bold;
+            padding: 50px 25px;
+        }
+        .parent > div:hover {
+            background-color: green;
+        }
+    </style>
+    <div class="parent">
+        <div>Tutorial</div>
+        <div>Reference</div>
+        <div>Exercise</div>
+        <div>Video</div>
+    </div>
+</body>
+</html>
