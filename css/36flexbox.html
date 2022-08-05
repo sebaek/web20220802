@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        .container {
+            display: flex;
+        }
+        .container>div {
+            background-color: #222;
+            color: #eee;
+            font-size: 48px;
+            font-weight: bold;
+            padding: 15px 20px;
+        }
+        .container>div:hover {
+            background-color: grey;
+        }
+    </style>
 </head>
 <body>
-    <!-- div*8 -->
-    <div>HTML</div>
-    <div>CSS</div>
-    <div>JAVASCRIPT</div>
-    <div>SQL</div>
-    <div>PYTHON</div>
-    <div>PHP</div>
-    <div>BOOTSTRAP</div>
-    <div>HOW TO</div>
+    <div class="container">
+        <!-- div*8 -->
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JAVASCRIPT</div>
+        <div>SQL</div>
+        <div>PYTHON</div>
+        <div>PHP</div>
+        <div>BOOTSTRAP</div>
+        <div>HOW TO</div>
+    </div>
 </body>
 </html>
