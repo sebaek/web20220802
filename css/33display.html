@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            display: inline;
+        }
+
+        a {
+            display: block;
+            width: 300px;
+            height: 50px;
+        }
+
+        h1:nth-child(odd),
+        a:nth-child(odd) {
+            background-color: gold;
+        }
+
+        h1:nth-child(even),
+        a:nth-child(even) {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1*3>lorem2 -->
+    <h1>
+        Lorem, ipsum.
+    </h1>
+    <h1>
+        Earum, minus!
+    </h1>
+    <h1>
+        Earum, accusantium!
+    </h1>
+
+    <hr>
+
+    <!-- a*3>lorem1 -->
+    <a href="">
+        Lorem.
+    </a>
+    <a href="">
+        Eligendi.
+    </a>
+    <a href="">
+        Exercitationem!
+    </a>
+</body>
+</html>
