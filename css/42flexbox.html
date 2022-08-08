@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .container {
+            display: flex;
+            background-color: gray;
+            height: 200px;
+            justify-content: flex-start;
+            align-items: stretch;
+        }
+        .item {
+            font-size: 48px;
+            font-weight: bold;
+            width: 100px;
+        }
+        #item3 {
+            font-size: 96px;
+            /* margin-right: 50px; */
+            margin-right: auto;
+        }
+        #item4 {
+            /* margin-left: 50px; */
+        }
+        .item:nth-child(odd) {
+            background-color: gold;
+        }
+        .item:nth-child(even) {
+            background-color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- .container>#item$.item*5{$} -->
+    <!-- flex container -->
+    <div class="container">
+        <!-- flex items -->
+        <div id="item1" class="item">1</div>
+        <div id="item2" class="item">2</div>
+        <div id="item3" class="item">3</div>
+        <div id="item4" class="item">4</div>
+        <div id="item5" class="item">5</div>
+    </div>
+</body>
+</html>
