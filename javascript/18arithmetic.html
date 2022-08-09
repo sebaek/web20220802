@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script>
+    // 산술 연산자
+    // +, -, *, /, %, **
+
+    console.log(3 + 5); // 8
+    console.log(5 - 2); // 3
+    console.log(5 * 3); // 15
+    console.log(10 / 2); // 5
+
+    // 나머지 연산 % (modulus, remainder)
+    console.log(10 % 2); // 0
+    console.log(9 % 4); // 1
+
+    // 제곱(exponentiation)
+    console.log(2 ** 3); // 8
+    console.log(3 ** 2); // 9
+
+    let a = 3;
+    let b = 5;
+
+    console.log(a + b);
+    console.log(a - b);
+    console.log(a * b);
+    console.log(a / b);
+    console.log(b % a);
+    console.log(a ** b);
+
+    let c = a + b;
+    let d = a - b;
+    let e = a * b;
+    let f = a / b;
+    let g = b % a;
+    let h = a ** b;
+
+    console.log(c, d, e, f, g, h);
+
+    // 연산자를 여러개 조합해서 사용할 수 있음
+    console.log(3 + 5 * 6); // 33
+    console.log(9 + 2 + 10); // 21
+    console.log(9 - 1 % 2); 
+
+    // 연산자를 조합할 경우 우선순위가 높은 것 부터 연산됨
+    // 연산자 우선순위 표 참고
+    // 연산자 조합시 괄호를 적극적으로 사용
+    console.log(3 + (5 * 6)); // 33
+    console.log((3 + 5) * 6); // 90
+    console.log(9 + 2 + 10); // 21
+    console.log(9 - (1 % 2)); 
+
+    let i = 3 + (5 * 6);
+    console.log(i);
+
+
+    </script>
+</body>
+</html>
