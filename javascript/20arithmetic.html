@@ -26,10 +26,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
     function times() {
+        console.log("곱하기 함수 실행되?");
+        let num1 = document.getElementById("input1").value;
+        console.log(num1);
 
+        let num2 = document.getElementById("input2").value;
+        console.log(num2);
+
+        document.getElementById("result").innerHTML = num1 * num2;
     }
     function divide() {
-        
+        console.log("나누기 함수 실행되?");
+        let num1 = document.getElementById("input1").value;
+        console.log(num1);
+
+        let num2 = document.getElementById("input2").value;
+        console.log(num2);
+
+        document.getElementById("result").innerHTML = num1 / num2;
     }
     function subtract() {
         console.log("빼기 함수");
