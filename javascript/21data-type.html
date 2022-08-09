@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script>
+    
+    // 자바스크립트의 데이터 타입(자료형)의 종류
+    // boolean, number, string, object, undefined, null ....
+    // 연산의 결과는 연산자와 사용하는 피연산자의 타입에 따라 달라질 수 있다
+
+    // 1. number
+    let a = 32323;
+    let b = 3.14;
+
+    // 2. string
+    // 큰(작은)따옴표로 묶음
+    let c = "hello";
+    let d = 'hello';
+
+    let e = "I'm your father.";
+    let f = 'My name is "JIMIN"';
+
+    let g = "3.14"; // string
+
+    // + 연산을 string 피연산자와 함께 사용하면
+    // 산술연산자가 아니라 문자열연결연산자
+
+    let h = "3";
+    let i = "5";
+    console.log(h + i); // "35"
+
+    let j = "9";
+    let k = 3;
+    console.log(j + k); // "93"
+
+    // string -> number 변환
+    let l = "99";
+    let m = parseInt(l);
+
+    console.log(m + 1); // 100
+
+    let n = parseFloat("3.14"); // 실수로 변환
+    let o = parseInt("3.14"); // 정수로만 변환
+
+    console.log(n, o);
+
+    let p = Number("3.14");
+    let q = Number("3");
+    console.log(p, q);
+    
+
+    </script>
+</body>
+</html>
