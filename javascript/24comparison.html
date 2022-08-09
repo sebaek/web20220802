@@ -11,13 +11,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
     // 비교 연산자
-    // ==(값이같다), !=(값지 같지않다), >(크다), <(작다), >=(크거나같다), <=(작거나같다)
+    // ==(값이같다), !=(값이 같지않다), >(크다), <(작다), >=(크거나같다), <=(작거나같다)
     // ===(값과 타입이 같다), !==(값이나 타입이 같지않다)
     // 연산결과 : boolean (true, false)
 
     let a = 5;
     console.log(a == 5); // true
     console.log(a == 8); // false
+    console.log(a != 5); // false
+    console.log(a != 8); // true
+
+    console.log(a == "5"); // true
+    console.log(a != "8"); // true
+
+    console.log("값,타입", a === "5"); // false
+    console.log("값,타입", a !== "8"); // true
 
     // > 크다
     console.log(a > 8); // false
@@ -25,11 +33,37 @@
     console.log(a > 5); // false
 
     // < 작다
+    console.log(a < 8); // true
+    console.log(a < 3); // false
+    console.log(a < 5); // false
 
     // >= 크거나같다
-    
+    console.log(a >= 8); // false
+    console.log(a >= 3); // true
+    console.log(a >= 5); // true
+
     // <= 작거나같다
-    
+    console.log(a <= 8); // true
+    console.log(a <= 3); // false
+    console.log(a <= 5); // true
+
+    // 타입이 다른 것끼리 비교
+    // 두항중 하나가 number이면 다른 하나를 number로 변경 시도
+    console.log("aa" > "b"); // false
+    console.log("11" > "2"); // false
+
+    console.log("11" > 2); // true
+
+    // 비교하기 전에 꼭 타입을 맞추는 코드 작성
+    let b = "11";
+    let c = 2;
+
+    console.log(Number(b) > Number(c)); 
+
+    let d = Number(b);
+    let e = Number(c);
+
+    console.log(d > e);
     </script>
 </body>
 </html>
