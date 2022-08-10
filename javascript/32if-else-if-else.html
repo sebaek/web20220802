@@ -15,7 +15,18 @@
     // 13살이상이면 -> 청소년입니다.
     // 7살이상이면 -> 어린입니다.
     // 7살미만이면 -> 아기입니다.
-    
+
+    let age = Number(prompt("나이를 입력해주세요"));
+
+    if (age >= 20) {
+        console.log("어른입니다.");
+    } else if (age >= 13) {
+        console.log("청소년입니다.");
+    } else if (age >= 7) {
+        console.log("어린이입니다.");
+    } else {
+        console.log("아기입니다.");
+    }
     </script>
 </body>
 </html>
