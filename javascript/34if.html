@@ -7,29 +7,33 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
+    <!-- input#input1+button[onclick]{확인}+h1#result -->
+    <input type="number" id="input1">
+    <button onclick="check()">확인</button>
+    <h1 id="result"></h1>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-    // Math.random()는
-    // 0이상 1미만의 임의의 수를 반환(return)
+    let r = parseInt(Math.random() * 100) + 1;
 
-    // 0~99(포함)의 임의의 정수 얻기
-    // 0.0 <= Math.random() < 1.0
-    // 0.0 * 100 <= Math.random() * 100 < 1.0 * 100
-    // 0.0 <= Math.random() * 100 < 100.0
-    // parseInt(0.0) <= parseInt(Math.random() * 100) < parseInt(100.0)
-    // 0 <= parseInt(Math.random() * 100) < 100
+    console.log(r);
 
-    let r1 = parseInt(Math.random() * 100);
-    console.log("0~99 랜덤", r1);
+    function check() {
+        console.log("입력된 값 검사.");
+        let userNumber = document.getElementById("input1").value;
+        userNumber = Number(userNumber);
 
-    let r2 = parseInt(Math.random() * 11);
-    // 
-    console.log("0~10 랜덤", r2);
+        let message;
+        if (r === userNumber) {
+            message = "정답입니다.";
+        } else if (r > userNumber) {
+            message = "더 큰 값을 입력해주세요.";
+        } else {
+            message = "더 작은 값을 입력해주세요.";
+        }
 
-    let r3 = parseInt(Math.random() * 45) + 1;
-
-    console.log("1~45 랜덤", r3);
+        document.getElementById("result").innerHTML = message;
+    }
     </script>
 </body>
 </html>
