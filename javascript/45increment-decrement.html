@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script>
+    // ++ 증가 연산자
+    // 피연산자는 1개
+    // 연산의 결과가 피연산자 위치에 따라 다름
+    // 피연산자(변수)가 오른쪽에 있으면 결과는 변수+1
+    // 피연산자(변수)가 왼쪽에 있으면 결과는 변수가 가진 값
+    // 변수의 값을 1증가
+    
+    let a = 5;
+    console.log(a++); // 5출력 a는 6이 됨
+    console.log(++a); // 7출력 a는 7이 됨
+    console.log(a); // 7
+
+    // -- 감소 연산자
+    // 피연산자는 1개
+    // 연산의 결과가 피연산자 위치에 따라 다름
+    // 피연산자(변수)가 오른쪽에 있으면 결과는 변수-1
+    // 피연산자(변수)가 왼쪽에 있으면 결과는 변수가 가진 값
+    // 변수의 값을 1감소
+
+    console.log(--a); // 6출력 a는 6이 됨
+    console.log(a--); // 6출력 a는 5가 됨
+    console.log(a);   // 5
+
+    let x = 10;
+    let y = 20;
+
+    let z = (x++) + (--y) - (x--) + (y++);
+    
+    </script>
+</body>
+</html>
