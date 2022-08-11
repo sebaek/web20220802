@@ -10,20 +10,31 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-    let a = [3, 5, 10, 2, 1, 7, 5, 6];
-    let b = [100, 200, 33, 22, 33, 11, 22];
+    let a = ["java", "spring", "jsp", "css", "html"];
+    
+    let b = [];
+    // b.push(a[0]);
+    // b.push(a[1]);
+    // b.push(a[2]);
+    // b.push(a[3]);
+    // b.push(a[4]);
 
-    // 두 배열이 가진 모든 값의 합을 구해서 출력
-    let sum = 0;
     for (let i = 0; i < a.length; i++) {
-        sum += a[i];
+        b.push(a[i]);
     }
-    for (let i = 0; i < b.length; i++) {
-        sum += b[i];
+    console.log(b);
+
+    let c = [3,2,2,4,3,9,6,12,1,5];
+    let d = [];
+
+    // d에 c의 값중 3의 배수만 복사 [3, 3, 9, 6, 12]
+    for (let i = 0; i < c.length; i++) {
+        if ((c[i] % 3) === 0) {
+            d.push(c[i]);
+        }
     }
 
-    console.log("총합", sum);
-    console.log("평균", sum / (a.length + b.length));
+    console.log(d);
     </script>
 </body>
 </html>
