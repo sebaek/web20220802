@@ -33,8 +33,30 @@
             d.push(c[i]);
         }
     }
-
     console.log(d);
+
+    let e = [2,3,4,1,5,6];
+    let f = ["java", "spring", "html", "css"];
+
+    let g = [];
+
+    // g에 e의 값들과 f의 값들을 복사해 넣는 코드 작성
+    for (let i = 0; i < e.length; i++) {
+        g.push(e[i]);
+    }
+
+    for (let i = 0; i < f.length; i++) {
+        g.push(f[i]);
+    }
+    console.log(g); // [2,3,4,1,5,6,"java", "spring", "html", "css"]
+
+    let h = [];
+    // h에 e의 값과 f의 값을 교차해서 복사해 넣는 코드 작성
+    for (let i = 0; i < f.length; i++) {
+        h.push(e[i]);
+        h.push(f[i]);
+    }
+    console.log(h); // [2, "java", 3, "spring", 4, "html", 1, "css"]
     </script>
 </body>
 </html>
