@@ -10,18 +10,16 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-    function printLotto() {
-        let number = parseInt(Math.random() * 45) + 1;
-
-        console.log(number);
+    // parameter(매개변수, 인자) : 함수가 받는 값을 저장하는 변수
+    // parameter와 argument는 모호하게 사용됨
+    function myfunc1(a) {
+        console.log("함수가 실행하는 코드들...");
+        console.log(a);
     }
 
-    printLotto(); // 1~45 정수 중 하나 출력
-    printLotto(); // 1~45 정수 중 하나 출력
-    printLotto(); // 1~45 정수 중 하나 출력
-    printLotto(); // 1~45 정수 중 하나 출력
-    printLotto(); // 1~45 정수 중 하나 출력
-    printLotto(); // 1~45 정수 중 하나 출력
+    myfunc1(3); // 3: argument (인수)
+    myfunc1(5);
+    myfunc1("bts");
 
     </script>
 </body>
