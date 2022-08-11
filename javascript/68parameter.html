@@ -10,17 +10,15 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-    // 파라미터명 작성 관습은 변수명 작성 관습과 같다.
-    // lowerCamelCase
-    function printDouble(a) {
-        console.log(a + a);
+    function myfunc1(param1, param2) {
+        console.log(param1);
+        console.log(param2);
     }
-    
-    printDouble(3); // 6 출력
-    printDouble(5); // 10 출력e
-    printDouble(300); // 600 출력
-    printDouble("hi"); // "hihi" 출력
 
+    myfunc1(1, 2);
+    myfunc1("java", "spring");
+    myfunc1(100, "html");
+    myfunc1("css", 99);
     </script>
 </body>
 </html>
