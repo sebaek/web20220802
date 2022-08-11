@@ -13,13 +13,35 @@
     let a = ["java", "html", "css", "spring", "mvc"];
 
     // a의 모든 아이템을 console 출력 (for 사용)
-
+    console.log("a의 모든 아이템을 console 출력 (for 사용)");
+    for (let i = 0; i < a.length; i++) {
+        console.log(a[i]);
+    }
     // 거꾸로 출력 (for 사용)
+    console.log("거꾸로 출력 (for 사용)");
+    for (let i = a.length - 1; i >= 0; i--) {
+        console.log(a[i]);
+    }
+
+    for (let i = 1; i <= a.length; i++) {
+        console.log(a[a.length - i]);
+    }
 
     // 홀수번째 아이템 출력 ("java", "css", "mvc")
+    console.log('홀수번째 아이템 출력 ("java", "css", "mvc")');
+    for (let i = 0; i < a.length; i++) {
+        if ((i % 2) == 0) {
+            console.log(a[i]);
+        }
+    }
 
     // 짝수번째 아이템 출력 ("html", "spring");
-
+    console.log('짝수번째 아이템 출력 ("html", "spring")');
+    for (let i = 0; i < a.length; i++) {
+        if ((i % 2) == 1) {
+            console.log(a[i]);
+        }
+    }
     </script>
 </body>
 </html>
