@@ -44,10 +44,32 @@
     console.log(i);
 
     console.log(i.group); // i객체의 group 프로퍼티
+    console.log(i.name);
+    console.log(i.age);
+    console.log(i.song);
     console.log(f.name);
     console.log(g.name);
 
-    
+    // 객체의 프로퍼티 값 변경
+    let j = 3;
+    j = 4;
+
+    i.age = 30; // 프로퍼티 값 변경
+    i.song = "butter"; // 프로퍼티 값 변경
+    console.log(i);
+    console.log(i.age);
+    console.log(i.song);
+
+    // i객체의 name, group 프로퍼티 값을 변경하는 코드 작성
+    i.name = "rm";
+    i.group = "new jeans";
+
+    console.log(i.name);
+    console.log(i.group);
+    console.log(i);
+
+
+
     </script>
 </body>
 </html>
