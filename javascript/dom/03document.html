@@ -8,64 +8,52 @@
 </head>
 <body>
     <!-- h1#head$*10>lorem1 -->
-    <h1 id="head1">
+    <h1 id="head1" class="note">
         Lorem.
     </h1>
-    <h1 id="head2">
-        Quos?
+    <h1 id="head2" class="note">
+        Tempora!
     </h1>
-    <h1 id="head3">
-        Eos.
+    <h1 id="head3" class="note error">
+        Quae.
     </h1>
-    <h1 id="head4">
-        Laborum.
+    <h1 id="head4" class="error">
+        Optio?
     </h1>
-    <h1 id="head5">
-        Eius.
+    <h1 id="head5" class="error">
+        Alias.
     </h1>
-    <h1 id="head6">
-        Tempora.
+    <h1 id="head6" class="error">
+        Ab!
     </h1>
     <h1 id="head7">
-        Necessitatibus!
+        Dolorem!
     </h1>
     <h1 id="head8">
-        Illo.
+        Sint.
     </h1>
     <h1 id="head9">
-        Facilis.
+        Dolor.
     </h1>
     <h1 id="head10">
-        Aut!
+        In!
     </h1>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-    // document.getElementById()
-    let a = document.getElementById("head1");
-    console.log(a);
+    // document.querySelectorAll()
+    let a = document.querySelectorAll(".note");
+    console.log(a[0]);
+    console.log(a[1]);
+    console.log(a[2]);
+    console.log(a.length);
 
-    console.log(document.getElementById("head2"));
-    console.log(document.getElementById("head3"));
+    // error 클래스인 요소를 document에서 얻어서 각각 출력
+    let b = document.querySelectorAll(".error");
+    for (let i = 0; i < b.length; i++) {
+        console.log(b[i]);
+    }
 
-    // document.querySelector()
-    let b = document.querySelector("#head4");
-    console.log(b);
-    console.log(document.querySelector("#head5"));
-
-    // head6, head7 id인 요소 getElementById로 document에서 얻어서 출력
-    let c = document.getElementById("head6");
-    console.log(c);
-
-    let d = document.getElementById("head7");
-    console.log(d);
-
-    // head8, head9 id인 요소 querySelector로 document에서 얻어서 출력
-    let e = document.querySelector("#head8");
-    console.log(e);
-    let f = document.querySelector("#head9");
-    console.log(f);
-    
     </script>
 </body>
 </html>

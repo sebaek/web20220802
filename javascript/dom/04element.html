@@ -12,60 +12,46 @@
         Lorem.
     </h1>
     <h1 id="head2">
-        Quos?
+        Sed.
     </h1>
     <h1 id="head3">
-        Eos.
+        Officiis.
     </h1>
     <h1 id="head4">
-        Laborum.
+        Quos!
     </h1>
     <h1 id="head5">
-        Eius.
+        Doloremque.
     </h1>
     <h1 id="head6">
-        Tempora.
+        Enim?
     </h1>
     <h1 id="head7">
-        Necessitatibus!
+        Repellendus.
     </h1>
     <h1 id="head8">
-        Illo.
+        Nobis!
     </h1>
     <h1 id="head9">
-        Facilis.
+        Veniam?
     </h1>
     <h1 id="head10">
-        Aut!
+        Molestiae.
     </h1>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-    // document.getElementById()
-    let a = document.getElementById("head1");
-    console.log(a);
+    let a = document.querySelector("#head1");
+    a.innerHTML = "점심시간";
 
-    console.log(document.getElementById("head2"));
-    console.log(document.getElementById("head3"));
-
-    // document.querySelector()
-    let b = document.querySelector("#head4");
-    console.log(b);
-    console.log(document.querySelector("#head5"));
-
-    // head6, head7 id인 요소 getElementById로 document에서 얻어서 출력
-    let c = document.getElementById("head6");
-    console.log(c);
-
-    let d = document.getElementById("head7");
-    console.log(d);
-
-    // head8, head9 id인 요소 querySelector로 document에서 얻어서 출력
-    let e = document.querySelector("#head8");
-    console.log(e);
-    let f = document.querySelector("#head9");
-    console.log(f);
+    // head2 아이디 요소의 컨텐트를 "뭐먹지"로 교체
+    let b = document.querySelector("#head2");
+    b.innerHTML = "뭐먹지?";
     
+    // head3, head4, head5 아이디 요소의 컨텐트 교체...
+    document.querySelector("#head3").innerHTML = "짜장면?";
+    document.querySelector("#head4").innerHTML = "짬뽕?";
+    document.querySelector("#head5").innerHTML = "탕수육?";
     </script>
 </body>
 </html>
