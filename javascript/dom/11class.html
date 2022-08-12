@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+    <!-- h1#head$.note*3>lorem1^h1#head$@4.error*3>lorem1 -->
+    <h1 id="head1" class="note">
+        Lorem.
+    </h1>
+    <h1 id="head2" class="note">
+        Neque!
+    </h1>
+    <h1 id="head3" class="note">
+        Earum.
+    </h1>
+    <h1 id="head4" class="error">
+        Lorem.
+    </h1>
+    <h1 id="head5" class="error">
+        Quidem?
+    </h1>
+    <h1 id="head6" class="error">
+        Eius?
+    </h1>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script>
+    let head1 = document.querySelector("#head1");
+    // 클래스 값 읽기
+    console.log(head1.className);
+    console.log(head1.getAttribute("class"));
+
+    // 클래스 추가
+    head1.classList.add("error");
+
+    // 클래스 삭제
+    head1.classList.remove("note");
+
+    // #head2, #head3 요소의 error 클래스 추가, note 클래스는 삭제
+    document.querySelector("#head2").classList.add("error");
+    document.querySelector("#head2").classList.remove("note");
+
+    let head3ClassList = document.querySelector("#head3").classList;
+    head3ClassList.add("error");
+    head3ClassList.remove("note");
+    </script>
+</body>
+</html>
