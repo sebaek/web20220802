@@ -16,8 +16,16 @@
     <script>
     document.querySelector("#btn1").addEventListener("click", function() {
         document.querySelector("#img1").setAttribute("src", "pic_bulbon.gif");
+        document.querySelector("#img1").setAttribute("title", "불 들어온 전구");
     });
-    
+
+    document.querySelector("#btn2").addEventListener("click", function() {
+        document.querySelector("#img1").setAttribute("src", "pic_bulboff.gif");
+        document.querySelector("#img1").setAttribute("title", "불 나간 전구");
+    });
+
+    // attribute 변경(추가) : setAttribute
+    // attribute 읽기 : getAttribute
     
     </script>
 </body>
