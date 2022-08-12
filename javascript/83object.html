@@ -12,27 +12,20 @@
     <script>
     let a = {
         name: "donald",
-        age: 40,
-        car: {
-            model: "tesla",
-            color: "white",
-            weight: 1000
+        drink: function() {
+            console.log("술을 마십니다.");
         }
+    };
+
+    console.log(a.name);
+    a.drink();
+
+    a.name = "trump";
+    console.log(a.name);
+    a.drink = function() {
+        console.log("물을 마십니다.");
     }
-
-    console.log(a.car.model);
-    console.log(a.car.color);
-    console.log(a.car.weight);
-
-    // model, color, weight 변경하는 코드 작성
-    a.car.model = "sonata";
-    a.car.color = "black";
-    a.car.weight = 5000;
-
-    console.log(a.car.model); // "sonata"
-    console.log(a.car.color); // "black"
-    console.log(a.car.weight); // 5000
-
+    a.drink();
     </script>
 </body>
 </html>
