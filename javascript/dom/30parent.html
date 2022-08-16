@@ -23,6 +23,9 @@
 
         let button = document.createElement("button");
         button.insertAdjacentHTML("beforeend", '<i class="fa-regular fa-trash-can"></i>');
+        button.addEventListener("click", function() {
+            this.parentElement.remove();
+        });
 
         li.append(button);
         ul.append(li);
