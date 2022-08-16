@@ -83,6 +83,13 @@
     document.querySelector("h2").addEventListener("click", function() {
         document.querySelector("h3").classList.toggle("d-none");
     });
+
+    let heads = document.querySelectorAll("h1");
+    for (let i = 0; i < heads.length; i++) {
+        heads[i].addEventListener("click", function() {
+            this.nextElementSibling.classList.toggle("d-none");
+        })
+    }
     </script>
 </body>
 </html>
