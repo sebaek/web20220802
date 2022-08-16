@@ -19,7 +19,21 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-    
+    document.querySelector("#btn1").addEventListener("click", function() {
+        let val = document.querySelector("#input1").value;
+        let li = document.createElement("li");
+        li.textContent = val;
+
+        document.querySelector("#li1").before(li);
+    });
+
+    document.querySelector("#btn2").addEventListener("click", function() {
+        let val = document.querySelector("#input1").value;
+        let li = document.createElement("li");
+        li.textContent = val;
+
+        document.querySelector("#li1").after(li);
+    });
     </script>
 </body>
 </html>
