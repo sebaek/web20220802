@@ -7,3 +7,4 @@
 [github desktop-바로다운로드](https://central.github.com/deployments/desktop/desktop/latest/win32)  
 [java 11 jdk](https://www.oracle.com/kr/java/technologies/javase/jdk11-archive-downloads.html)  
 [eclipse 2021-03 - 바로다운로드](https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2021-03/R/eclipse-jee-2021-03-R-win32-x86_64.zip)  
+[7zip](https://www.7-zip.org/a/7z2201-x64.exe)
