@@ -1,4 +1,4 @@
-[다시보기 - ms 계정 로그인이 필요할 수도 있습니다(정책이 바뀐 것 같아요)](https://skku0-my.sharepoint.com/:f:/g/personal/b0s0e0_skku_edu/EjIROt6Sts1Is737ftS0Ga4B6_d69ljq5YqfHth3mEBIbg?e=kHch3T)
+[다시보기](https://skku0-my.sharepoint.com/:f:/g/personal/b0s0e0_skku_edu/EjIROt6Sts1Is737ftS0Ga4B6_d69ljq5YqfHth3mEBIbg?e=kHch3T)
 ### 설치파일 다운로드 경로
 [chrome](https://www.google.com/intl/ko_kr/chrome/)  
 [d2coding-바로다운로드](https://github.com/naver/d2codingfont/raw/master/D2Coding-Ver1.3.2-20180524.zip)  
